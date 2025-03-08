@@ -1,23 +1,33 @@
-import { Box, Flex, Heading, Button } from "@chakra-ui/react";
+import { Box, Flex, Heading, Button, Stack, Link } from "@chakra-ui/react";
 
 function Header() {
   return (
     <Box
       as="header"
-      bg="bgCustomGreen"
+      bgColor="bgHeader"
       py={8}
       px={32}
-      width={"100%"}
-      boxShadow="md"
-      height="72px"
+      w={"100%"}
+      h="80px"
+      position="fixed" // Fija el header en la parte superior
+      top={0} // Lo coloca en la parte superior de la pantalla
+      left={0} // Lo alinea a la izquierda
+      right={0} // Lo alinea a la derecha
+      zIndex={10} // Asegura que esté por encima de otros elementos
+      backdropFilter={"blur(8px)"}
     >
       <Flex justify="space-between" align="center" h="100%">
-        <Heading color="secondary" bg="bgCustom">
-          EcoGlow
-        </Heading>
-        <Box color="secondary">Inicio</Box>
+        <Heading color="secondary">🫘</Heading>
+
+        <Stack direction="row" gap={64}>
+          <Link>Inicio</Link> {/*"18px"*/}
+          <Link>Productos</Link>
+          <Link>Nosotros</Link>
+          <Link>Opiniones</Link>
+        </Stack>
+
         <Button colorScheme="white" variant="outline">
-          Suscribirse
+          Burger menu
         </Button>
       </Flex>
     </Box>
