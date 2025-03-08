@@ -1,6 +1,13 @@
-import { Box, Flex, Heading, Button, Stack, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading, Button, Stack } from "@chakra-ui/react";
 
 function Header() {
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Box
       as="header"
@@ -20,10 +27,26 @@ function Header() {
         <Heading color="secondary">🫘</Heading>
 
         <Stack direction="row" gap={64}>
-          <Link fontSize={"18px"}>Inicio</Link>
-          <Link>Productos</Link>
-          <Link>Nosotros</Link>
-          <Link>Opiniones</Link>
+          <Box as="span" cursor="pointer" onClick={() => handleScroll("home")}>
+            Inicio
+          </Box>
+          <Box
+            as="span"
+            cursor="pointer"
+            onClick={() => handleScroll("products")}
+          >
+            Productos
+          </Box>
+          <Box as="span" cursor="pointer" onClick={() => handleScroll("about")}>
+            Nosotros
+          </Box>
+          <Box
+            as="span"
+            cursor="pointer"
+            onClick={() => handleScroll("opinions")}
+          >
+            Opiniones
+          </Box>
         </Stack>
 
         <Button>Burger menu</Button>

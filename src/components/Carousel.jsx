@@ -22,6 +22,7 @@ function Carousel() {
 
   return (
     <Swiper
+      id="home"
       spaceBetween={0}
       slidesPerView={1}
       loop={true}

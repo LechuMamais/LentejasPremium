@@ -3,6 +3,7 @@ import { Text, Stack } from "@chakra-ui/react";
 function Opinions() {
   return (
     <Stack
+      id="opinions"
       as="section"
       bg={"url(/images/Opinions_background.png)"}
       h={"1900px"}

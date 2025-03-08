@@ -3,6 +3,7 @@ import { Grid, GridItem, Image, Text } from "@chakra-ui/react";
 function About() {
   return (
     <Grid
+      id={"about"}
       as={"section"}
       templateRows="repeat(3, 1fr)"
       templateColumns="repeat(2, 1fr)"
