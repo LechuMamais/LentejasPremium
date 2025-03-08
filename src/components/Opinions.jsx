@@ -9,7 +9,7 @@ function Opinions() {
       p={"100px"}
     >
       <Text
-        fontSize={"84px"}
+        fontSize={"36px"}
         fontWeight={"600"}
         color={"primary"}
         textAlign={"start"}

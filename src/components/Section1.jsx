@@ -11,13 +11,18 @@ function Section1() {
       alignItems={"center"}
       gap={8}
       bgImage="url(/images/citric_bg.jpg)"
-      backgroundRepeat={"no-repeat"}
+      backgroundRepeat={"repeat-x"}
       backgroundPosition={"bottom"}
     >
       <Text fontSize={"120px"} color={"primary"} fontWeight={"600"}>
         EAT HEALTHY
       </Text>
-      <Text w={"75%"} fontSize={"48px"} textAlign={"center"} color={"primary"}>
+      <Text
+        fontSize={"36px"}
+        textAlign={"center"}
+        color={"primary"}
+        maxW={"1000px"}
+      >
         Descubre el sabor y la calidad de las mejores legumbres
       </Text>
       <Button

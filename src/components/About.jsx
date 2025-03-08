@@ -14,6 +14,7 @@ function About() {
         flexDirection={"column"}
         justifyContent={"center"}
         gap={8}
+        bg={"bgCustomGreen"}
       >
         <Text fontSize={"20px"} fontWeight={"bold"} color={"primary"}>
           SOMOS
@@ -40,6 +41,7 @@ function About() {
         flexDirection={"column"}
         justifyContent={"center"}
         gap={8}
+        bg={"bgCustomGreen"}
       >
         <Text fontSize={"20px"} fontWeight={"bold"} color={"primary"}>
           SOMOS

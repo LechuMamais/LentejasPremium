@@ -9,6 +9,7 @@ function Slider() {
       justifyContent={"center"}
       alignItems={"center"}
       bg={"url(images/campolentejas.jpg)"}
+      backgroundSize="cover"
     >
       <Text
         fontSize={"310px"}
