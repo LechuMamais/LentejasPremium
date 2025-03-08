@@ -1,6 +1,6 @@
 import { Flex, Text } from "@chakra-ui/react";
 
-function Slider() {
+function Carousel() {
   return (
     <Flex
       as="section"
@@ -23,4 +23,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default Carousel;
