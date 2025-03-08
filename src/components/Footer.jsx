@@ -9,16 +9,12 @@ function Footer() {
     <Box as="footer" bg="bgFooter" p={32} width="100%" height="400px">
       <Flex justify="space-around" align="center" h="100%" w="100%">
         <Stack spacing={1}>
-          <Text color="secondary" my={0}>
-            Lentejas Premium © 2018.
-          </Text>
-          <Text color="secondary" my={0}>
-            Marca registrada
-          </Text>
+          <Text color="secondary">Lentejas Premium © 2018.</Text>
+          <Text color="secondary">Marca registrada</Text>
         </Stack>
 
         <VStack gap={16}>
-          <Text color="secondary" fontSize="20px" margin={0}>
+          <Text color="secondary" fontSize="20px">
             ONLINE COMMUNITY
           </Text>
           <HStack gap={32}>
@@ -44,7 +40,7 @@ function Footer() {
         </VStack>
 
         <Link href="/#">
-          <Text color="secondary" fontSize="20px" margin={0}>
+          <Text color="secondary" fontSize="20px">
             Web Design
           </Text>
         </Link>

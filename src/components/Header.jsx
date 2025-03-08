@@ -8,27 +8,25 @@ function Header() {
       py={8}
       px={32}
       w={"100%"}
-      h="80px"
-      position="fixed" // Fija el header en la parte superior
-      top={0} // Lo coloca en la parte superior de la pantalla
-      left={0} // Lo alinea a la izquierda
-      right={0} // Lo alinea a la derecha
-      zIndex={10} // Asegura que esté por encima de otros elementos
+      h="60px"
+      position="fixed"
+      top={0}
+      left={0}
+      right={0}
+      zIndex={10}
       backdropFilter={"blur(8px)"}
     >
       <Flex justify="space-between" align="center" h="100%">
         <Heading color="secondary">🫘</Heading>
 
         <Stack direction="row" gap={64}>
-          <Link>Inicio</Link> {/*"18px"*/}
+          <Link fontSize={"18px"}>Inicio</Link>
           <Link>Productos</Link>
           <Link>Nosotros</Link>
           <Link>Opiniones</Link>
         </Stack>
 
-        <Button colorScheme="white" variant="outline">
-          Burger menu
-        </Button>
+        <Button>Burger menu</Button>
       </Flex>
     </Box>
   );
