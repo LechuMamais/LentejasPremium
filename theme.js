@@ -12,7 +12,13 @@ const customConfig = defineConfig({
                 bgButton: "#D9D9D9",
                 bgButton_hover: "#A9A9A9",
                 bgHeader: "rgba(0, 0, 0, 0.3)",
+                yellowStar: '#FBBC05'
             },
+            /*boxShadows: {
+                smallShadow: "0px 0px 12px 0px rgba(0,0,0,0.5)",
+                md: "0px 0px 24px 0px rgba(0,0,0,0.5)",
+                lg: "0 0 16px 16px black"
+            }*/
         },
     },
     /*fonts: {
