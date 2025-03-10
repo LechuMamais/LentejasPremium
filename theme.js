@@ -10,6 +10,7 @@ const customConfig = defineConfig({
                 bgCustomGreen: "#F1F0EC",
                 bgFooter: "#000000",
                 bgButton: "#D9D9D9",
+                bgButton_hover: "#A9A9A9",
                 bgHeader: "rgba(0, 0, 0, 0.3)",
             },
         },
