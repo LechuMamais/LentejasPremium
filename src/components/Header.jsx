@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Button, Stack } from "@chakra-ui/react";
+import { Box, Flex, Button, Stack, Image } from "@chakra-ui/react";
 import { handleScroll } from "../utils/handleScroll";
 
 function Header() {
@@ -7,10 +7,10 @@ function Header() {
       as="header"
       bgColor="bgHeader"
       py={8}
-      px={32}
+      px={12}
       w={"100%"}
-      h="60px"
-      position="fixed"
+      h={"60px"}
+      position={"fixed"}
       top={0}
       left={0}
       right={0}
@@ -18,7 +18,12 @@ function Header() {
       backdropFilter={"blur(8px)"}
     >
       <Flex justify="space-between" align="center" h="100%">
-        <Heading color="secondary">🫘</Heading>
+        <Image
+          borderRadius={"100%"}
+          src="/images/branding/logo_64_b&w_round.png"
+          alt="logo"
+          w="32px"
+        />
 
         <Stack direction="row" gap={64}>
           <Box as="span" cursor="pointer" onClick={() => handleScroll("home")}>
