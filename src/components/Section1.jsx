@@ -1,4 +1,5 @@
 import { Text, Button, VStack } from "@chakra-ui/react";
+import { handleScroll } from "../utils/handleScroll";
 
 function Section1() {
   return (
@@ -34,6 +35,11 @@ function Section1() {
         px={16}
         py={8}
         color={"primary"}
+        transition={"all 0.2s"}
+        _hover={{
+          bg: "bgButton_hover",
+        }}
+        onClick={() => handleScroll("products")}
       >
         <p>Nuestros Productos</p>
       </Button>

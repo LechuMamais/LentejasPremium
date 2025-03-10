@@ -29,7 +29,10 @@ function ProductsSection() {
           transition={"all 0.2s"}
           _hover={{
             pr: "0px",
-            "& svg": { fill: "bgButton_hover", transition: "all 0.2s" },
+            "& svg": {
+              fill: "bgButton_hover",
+              transition: "all 0.4s",
+            },
           }}
           fontSize={"120px"}
           cursor={"pointer"}

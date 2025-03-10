@@ -1,13 +1,7 @@
 import { Box, Flex, Heading, Button, Stack } from "@chakra-ui/react";
+import { handleScroll } from "../utils/handleScroll";
 
 function Header() {
-  const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <Box
       as="header"

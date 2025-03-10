@@ -11,7 +11,7 @@ function ProductCard({ product }) {
       bg="bgCustom"
       transition="transform 0.1s, box-shadow 0.1s"
       _hover={{
-        transform: "scale(1.01)",
+        //transform: "scale(1.01)",
         boxShadow: "lg",
       }}
     >
